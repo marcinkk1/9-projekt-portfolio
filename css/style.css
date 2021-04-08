@@ -61,9 +61,9 @@ body {
 
 
 hr {
-    margin-bottom: 0;
     border: 1px #007bff solid;
     width: 70px;
+    border-bottom: 0;
 }
 
 
@@ -102,7 +102,7 @@ hr {
 }
 
 section {
-    padding: 120px 0;
+    padding: 60px 0;
 }
 
 .section-header {
@@ -248,3 +248,18 @@ section {
     
 }
 
+@media (max-width: 480px) {
+    .main-header .main-header-content h1 {
+        font-size: 3em;
+    }
+
+    .about .about-img  {
+        max-height: 200px;
+        max-width: 200px;
+    }
+
+    .kontakt input[type="text"],
+    .kontakt input[type="email"] {
+        flex-basis: 100%;
+    }
+}
